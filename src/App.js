@@ -3,9 +3,15 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+//import ComingSoon from "./components/ComingSoon/ComingSoon";
+import Education from "./components/Education/Education";
+import Projects from "./components/Projects/Projects";
+//import Interests from "./components/Interests/Interests";
+//import Civic from "./components/Civic/Civic";
+//import International from "./components/International/International";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -39,6 +45,10 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/education" element={<Education />} />
+          {/* <Route path="/international" element={<International />} /> */}
+          {/* <Route path="/civic" element={<Civic />} /> */}
+          {/* <Route path="/interests" element={<Interests />} /> */}
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

@@ -6,7 +6,6 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -15,6 +14,10 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+//import { FaEnvira } from "react-icons/fa";
+//import { GiWorld } from "react-icons/gi";
+import { IoMdSchool } from "react-icons/io";
+//import { MdOutlineSportsEsports } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -94,17 +97,48 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/education"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <IoMdSchool style={{ marginBottom: "2px" }} /> Career &
+                Education
               </Nav.Link>
             </Nav.Item>
 
+            {/*<Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/international"
+                onClick={() => updateExpanded(false)}
+              >
+                <GiWorld style={{ marginBottom: "2px" }} /> International Mobility
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/civic"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaEnvira style={{ marginBottom: "2px" }} /> Civic Engagement
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/interests"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdOutlineSportsEsports style={{ marginBottom: "2px" }} /> Sports & Interests
+              </Nav.Link>
+            </Nav.Item>*/}
+
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/bilales/ePortfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >

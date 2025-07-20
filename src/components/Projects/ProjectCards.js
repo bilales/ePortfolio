@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
+
+
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
@@ -13,16 +15,19 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
+        {props.ghLink && (
+          <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+          </Button>
+          
+        )}
         {"\n"}
         {"\n"}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
-        {!props.isBlog && props.demoLink && (
+        {props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
@@ -31,6 +36,13 @@ function ProjectCards(props) {
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
+          </Button>
+        )}
+
+        {props.file && (
+          <Button variant="primary" href={props.file} target="_blank">
+            <CgWebsite /> &nbsp;
+            {props.fileText}
           </Button>
         )}
       </Card.Body>
