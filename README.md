@@ -1,5 +1,5 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
+  ePortfolio Website<br/>
   <a href="https://soumyajit.vercel.app/" target="_blank">bilales.com</a>
 </h2>
 
