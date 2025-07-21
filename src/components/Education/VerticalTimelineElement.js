@@ -1,45 +1,47 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { InView } from 'react-intersection-observer';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import { InView } from "react-intersection-observer";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 
 const VerticalTimelineElement = ({
-  children = '',
-  className = '',
+  children = "",
+  className = "",
   contentArrowStyle = null,
   contentStyle = null,
-  date = '',
-  dateClassName = '',
+  date = "",
+  dateClassName = "",
   icon = null,
-  iconClassName = '',
+  iconClassName = "",
   iconOnClick = null,
   onTimelineElementClick = null,
   iconStyle = null,
-  id = '',
-  position = '',
+  id = "",
+  position = "",
   style = null,
-  textClassName = '',
+  textClassName = "",
   intersectionObserverProps = {
-    rootMargin: '0px 0px -40px 0px',
+    rootMargin: "0px 0px -40px 0px",
     triggerOnce: true,
   },
   visible = false,
-  fileText = 'Download',
-  file = '',
-  ghLink = '',
-  demoLink = '',
+  abstractText = "abstract",
+  abstract = "",
+  reportText = "report",
+  report = "",
+  ghLink = "",
+  demoLink = "",
 }) => (
   <InView {...intersectionObserverProps}>
     {({ inView, ref }) => (
       <div
         ref={ref}
         id={id}
-        className={classNames(className, 'vertical-timeline-element', {
-          'vertical-timeline-element--left': position === 'left',
-          'vertical-timeline-element--right': position === 'right',
-          'vertical-timeline-element--no-children': children === '',
+        className={classNames(className, "vertical-timeline-element", {
+          "vertical-timeline-element--left": position === "left",
+          "vertical-timeline-element--right": position === "right",
+          "vertical-timeline-element--no-children": children === "",
         })}
         style={style}
       >
@@ -49,10 +51,10 @@ const VerticalTimelineElement = ({
             onClick={iconOnClick}
             className={classNames(
               iconClassName,
-              'vertical-timeline-element-icon',
+              "vertical-timeline-element-icon",
               {
-                'bounce-in': inView || visible,
-                'is-hidden': !(inView || visible),
+                "bounce-in": inView || visible,
+                "is-hidden": !(inView || visible),
               }
             )}
           >
@@ -63,10 +65,10 @@ const VerticalTimelineElement = ({
             onClick={onTimelineElementClick}
             className={classNames(
               textClassName,
-              'vertical-timeline-element-content',
+              "vertical-timeline-element-content",
               {
-                'bounce-in': inView || visible,
-                'is-hidden': !(inView || visible),
+                "bounce-in": inView || visible,
+                "is-hidden": !(inView || visible),
               }
             )}
           >
@@ -78,7 +80,7 @@ const VerticalTimelineElement = ({
             <span
               className={classNames(
                 dateClassName,
-                'vertical-timeline-element-date'
+                "vertical-timeline-element-date"
               )}
             >
               {date}
@@ -86,7 +88,12 @@ const VerticalTimelineElement = ({
 
             {/* GitHub Button */}
             {ghLink && (
-              <a href={ghLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginRight: '10px' }}>
+              <a
+                href={ghLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", marginRight: "10px" }}
+              >
                 <button type="button" className="download-button">
                   <BsGithub /> &nbsp; GitHub
                 </button>
@@ -95,7 +102,12 @@ const VerticalTimelineElement = ({
 
             {/* Demo Button */}
             {demoLink && (
-              <a href={demoLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <a
+                href={demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
                 <button type="button" className="download-button">
                   <CgWebsite /> &nbsp; Demo
                 </button>
@@ -103,10 +115,27 @@ const VerticalTimelineElement = ({
             )}
 
             {/* File Download Button */}
-            {file && (
-              <a href={file} download style={{ textDecoration: 'none', marginLeft: '10px' }}>
+            {abstract && (
+              <a
+                href={abstract}
+                download
+                style={{ textDecoration: "none", marginLeft: "10px" }}
+              >
                 <button type="button" className="download-button">
-                  {fileText}
+                  {abstractText}
+                </button>
+              </a>
+            )}
+
+            {/* File Download Button */}
+            {report && (
+              <a
+                href={report}
+                download
+                style={{ textDecoration: "none", marginLeft: "10px" }}
+              >
+                <button type="button" className="download-button">
+                  {reportText}
                 </button>
               </a>
             )}

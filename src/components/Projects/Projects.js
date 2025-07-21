@@ -6,9 +6,12 @@ import Particle from "../Particle";
 import trafficlights from "../../Assets/Projects/trafficlights.png";
 import anonymization from "../../Assets/Projects/anonymization.png";
 import heart from "../../Assets/Projects/heart.png";
+import jpeg from "../../Assets/Projects/jpeg.png";
 import maps from "../../Assets/Projects/maps.png";
+import mnist from "../../Assets/Projects/MNIST.png";
 import PI3D from "../../Assets/Projects/PI3D.png";
 import PI3D_slides from "../../Assets/Projects/PI3D_slides.pdf";
+import traffic from "../../Assets/Projects/DeepLearning_Intro.pdf";
 
 function Projects() {
   return (
@@ -21,6 +24,18 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mnist}
+              title="MNIST Diffusion Model"
+              description="Developed a diffusion model for the MNIST dataset, achieving a 98.5% accuracy on the test set. The model was trained using PyTorch, leveraging a UNet architecture with attention mechanisms. Implemented data augmentation techniques to enhance model robustness and prevent overfitting. The project demonstrates the effectiveness of diffusion models in generating high-quality images from noise."
+              ghLink="https://github.com/bilales/MNIST_Diffusion"
+            />
+          </Col>
+        </Row>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -47,7 +62,9 @@ function Projects() {
               imgPath={trafficlights}
               title="Traffic Sign Recognition using Deep Learning"
               description="Developed a deep learning-based model for detecting and classifying traffic signs using convolutional neural networks (CNNs). The project involved data collection via web scraping and manual acquisition, model optimization using VGG16 fine-tuning, and performance analysis with accuracy reaching 92.9%."
-              ghLink="https://github.com/Abdelmouhaimen/DL-TrafficSignClassification"
+              ghLink="https://github.com/bilales/Traffic_Signs_Classification"
+              file={traffic}
+              fileText="report"
             />
           </Col>
         </Row>
@@ -60,6 +77,7 @@ function Projects() {
               description="This project provides tools for real-time person anonymization in videos using computer vision techniques. It replaces detected persons with a dynamically generated background, effectively redacting them from the scene while preserving context. The system can use either bounding boxes or segmentation masks for person detection and overlays skeletal keypoints to maintain motion information.
                           This is ideal for applications requiring privacy protection, such as public video surveillance analysis, data collection for autonomous vehicles, or any domain where personal identity must be obscured."
               ghLink="https://github.com/bilales/person-anonymize/tree/main"
+              demoLink="https://imgur.com/a/GxbTIQk"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -71,6 +89,14 @@ Developed advanced segmentation masks by applying complex boolean logic, includi
 largest connected component, and performing union/subtraction of key anatomical structures (atria, ventricles, aorta)
 Implemented Dice and Hausdorff validation metrics to quantitatively compare mask volumes and accuracy."
               ghLink="https://github.com/bilales/Medical_Image_Processing/tree/main"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jpeg}
+              title="Image and Video Compression using JPEG and MPEG Algorithms"
+              description="Developed a comprehensive image and video compression system using JPEG and MPEG standards. The project involved implementing the Discrete Cosine Transform (DCT) for image compression, quantization, and Huffman coding for efficient data representation. For video, utilized motion estimation and compensation techniques to reduce temporal redundancy, achieving significant file size reduction while maintaining visual quality."
+              ghLink="https://github.com/bilales/Image-Video-Compression"
             />
           </Col>
         </Row>

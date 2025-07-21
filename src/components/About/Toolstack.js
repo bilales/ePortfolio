@@ -1,12 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiLinux,
-  SiVisualstudiocode,
-  SiNetlify,
-  SiHeroku,
-  SiUnity,
-} from "react-icons/si";
+import { SiLinux, SiHeroku, SiUnity, SiMlflow } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 function Toolstack() {
   return (
@@ -15,10 +10,10 @@ function Toolstack() {
         <SiLinux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <VscVscode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNetlify />
+        <SiMlflow />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiUnity />
