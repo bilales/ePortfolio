@@ -9,6 +9,7 @@ import heart from "../../Assets/Projects/heart.png";
 import jpeg from "../../Assets/Projects/jpeg.png";
 import maps from "../../Assets/Projects/maps.png";
 import mnist from "../../Assets/Projects/MNIST.png";
+import VLMs from "../../Assets/Projects/VLMs.jpeg";
 import PI3D from "../../Assets/Projects/PI3D.png";
 import PI3D_slides from "../../Assets/Projects/PI3D_slides.pdf";
 import traffic from "../../Assets/Projects/DeepLearning_Intro.pdf";
@@ -34,6 +35,24 @@ function Projects() {
               ghLink="https://github.com/bilales/MNIST_Diffusion"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={anonymization}
+              title="Person Anonymization with Dynamic Background Reconstruction"
+              description="This project provides tools for real-time person anonymization in videos using computer vision techniques. It replaces detected persons with a dynamically generated background, effectively redacting them from the scene while preserving context. The system can use either bounding boxes or segmentation masks for person detection and overlays skeletal keypoints to maintain motion information.
+                          This is ideal for applications requiring privacy protection, such as public video surveillance analysis, data collection for autonomous vehicles, or any domain where personal identity must be obscured."
+              ghLink="https://github.com/bilales/person-anonymize/tree/main"
+              demoLink="https://imgur.com/a/GxbTIQk"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={VLMs}
+              title="VLM fine-tuning for Medical Image Analysis"
+              description="Fine-tuned a 3-billion-parameter Vision Language Model for the specialized domain of medical pathology VQA, leveraging the 32k-example PathVQA dataset to improve its diagnostic reasoning capabilities.Engineered a memory-efficient training pipeline using QLoRA and PEFT, successfully fine-tuning the model on a single8GB consumer GPU. Implemented a robust evaluation framework, benchmarking performance with accuracy for closed-formanswers and BERTScore for open-ended generation. Deployed a proof-of-concept interactive demo with Gradio."
+              ghLink="https://github.com/bilales/"
+            />
+          </Col>
         </Row>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -50,15 +69,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={maps}
-              title="3D Surface Compression and Remeshing using MAPS"
-              description="Developed a Multiresolution Adaptive Parameterization of Surfaces (MAPS) approach for 3D mesh compression and remeshing. Implemented progressive vertex removal, constrained Delaunay retriangulation, and adaptive parameterization to optimize mesh complexity while preserving topology. Achieved O(N log N) efficiency for large-scale 3D models, with applications in 3D scanning, texturing, and morphing."
-              ghLink="https://github.com/Abdelmouhaimen/CSI_3D_MAPS_N7"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={trafficlights}
               title="Traffic Sign Recognition using Deep Learning"
               description="Developed a deep learning-based model for detecting and classifying traffic signs using convolutional neural networks (CNNs). The project involved data collection via web scraping and manual acquisition, model optimization using VGG16 fine-tuning, and performance analysis with accuracy reaching 92.9%."
@@ -67,19 +77,17 @@ function Projects() {
               fileText="report"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={maps}
+              title="3D Surface Compression and Remeshing using MAPS"
+              description="Developed a Multiresolution Adaptive Parameterization of Surfaces (MAPS) approach for 3D mesh compression and remeshing. Implemented progressive vertex removal, constrained Delaunay retriangulation, and adaptive parameterization to optimize mesh complexity while preserving topology. Achieved O(N log N) efficiency for large-scale 3D models, with applications in 3D scanning, texturing, and morphing."
+              ghLink="https://github.com/Abdelmouhaimen/CSI_3D_MAPS_N7"
+            />
+          </Col>
         </Row>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={anonymization}
-              title="Person Anonymization with Dynamic Background Reconstruction"
-              description="This project provides tools for real-time person anonymization in videos using computer vision techniques. It replaces detected persons with a dynamically generated background, effectively redacting them from the scene while preserving context. The system can use either bounding boxes or segmentation masks for person detection and overlays skeletal keypoints to maintain motion information.
-                          This is ideal for applications requiring privacy protection, such as public video surveillance analysis, data collection for autonomous vehicles, or any domain where personal identity must be obscured."
-              ghLink="https://github.com/bilales/person-anonymize/tree/main"
-              demoLink="https://imgur.com/a/GxbTIQk"
-            />
-          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={heart}
