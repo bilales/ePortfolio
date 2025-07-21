@@ -50,7 +50,7 @@ function Projects() {
               imgPath={VLMs}
               title="VLM fine-tuning for Medical Image Analysis"
               description="Fine-tuned a 3-billion-parameter Vision Language Model for the specialized domain of medical pathology VQA, leveraging the 32k-example PathVQA dataset to improve its diagnostic reasoning capabilities.Engineered a memory-efficient training pipeline using QLoRA and PEFT, successfully fine-tuning the model on a single8GB consumer GPU. Implemented a robust evaluation framework, benchmarking performance with accuracy for closed-formanswers and BERTScore for open-ended generation. Deployed a proof-of-concept interactive demo with Gradio."
-              ghLink="https://github.com/bilales/"
+              ghLink="https://github.com/bilales/VLM_Medical"
             />
           </Col>
         </Row>
