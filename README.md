@@ -1,11 +1,11 @@
 <h2 align="center">
   ePortfolio Website<br/>
-  <a href="bilal-azdad.com" target="_blank">bilal-azdad.com</a>
+  <a href="https://bilal-azdad.com" target="_blank">bilal-azdad.com</a>
 </h2>
 
 ## Built With
 
-My personal portfolio <a href="bilal-azdad.com" target="_blank">bilal-azdad.com</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://bilal-azdad.com" target="_blank">bilal-azdad.com</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
