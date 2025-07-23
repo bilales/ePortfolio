@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.84b9aa09.css",
-    "main.js": "/static/js/main.ab0b2abd.js",
+    "main.js": "/static/js/main.7025ba84.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/PI3D_slides.pdf": "/static/media/PI3D_slides.f87d36ae941b95764a18.pdf",
@@ -11,7 +11,7 @@
     "static/media/anonymization.png": "/static/media/anonymization.bbf1367026cb39aa78d3.png",
     "static/media/PI3D.png": "/static/media/PI3D.da271bf39c2d5f11dbad.png",
     "static/media/GAN_abstract.pdf": "/static/media/GAN_abstract.6761e1b93bb25aa3eeb6.pdf",
-    "static/media/Bilal_Azdad.pdf": "/static/media/Bilal_Azdad.eab3ec45dd8feed4b655.pdf",
+    "static/media/resume.pdf": "/static/media/resume.edc20bcae1fe21839af1.pdf",
     "static/media/heart.png": "/static/media/heart.fd889baf9673fe8757d9.png",
     "static/media/MNIST.png": "/static/media/MNIST.b67b39de96f44133e53f.png",
     "static/media/GAN_paper.pdf": "/static/media/GAN_paper.c51f5e37924663a3b39f.pdf",
@@ -26,12 +26,12 @@
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
     "main.84b9aa09.css.map": "/static/css/main.84b9aa09.css.map",
-    "main.ab0b2abd.js.map": "/static/js/main.ab0b2abd.js.map",
+    "main.7025ba84.js.map": "/static/js/main.7025ba84.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84b9aa09.css",
-    "static/js/main.ab0b2abd.js"
+    "static/js/main.7025ba84.js"
   ]
 }
